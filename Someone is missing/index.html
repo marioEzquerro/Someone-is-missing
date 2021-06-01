@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Inicio</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" class="animate-slow fadeIn">
+        
+        <!-- NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Someone is missing</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu<i class="fas fa-bars ml-3"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#howto">Como jugar</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#empezar">Iniciar busqueda</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#creators">Creadores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+       
+        <!-- PRESENTACION -->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Someone is missing</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Un Escape Room de la escritora desaparecida.</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#howto">Cómo Jugar</a>
+                    <a class="btn btn-primary js-scroll-trigger" href="#empezar">Empezar Escape Room</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- COMO JUGAR -->
+        <section class="about-section text-center" id="howto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Como Jugar</h2>
+                        <p class="text-white-50 mb-4">
+                            En este Escape Room virtual tendrás que resolver una serie de rompecabezas para 
+                            encontrar a la escritora perdida para que pueda seguir redactando sus obras.
+                        </p>
+                        <p class="text-white-50 mb-4">
+                            Tu aventura empieza aquí en la página principal, en cada desafio se te irá indicando los pasos a seguir.
+                            A medida que resuelvas los acertijos irás avanzando hasta conseguir llegar a la respuesta final.
+                            Si te atascas en algun puzzle no hay problema, dispones de apartado de pistas para ayudarte a resolverlos.
+                            Ahora para empezar vé al apartado de abajo y dale al botón de <a class="js-scroll-trigger" href="#empezar">jugar</a>.
+                        </p>
+                        <p class="text-white-50">
+                            ¡Disfrútalo y pásalo bien!
+                        </p>
+                    </div>
+                </div>
+                
+                <img class="img-fluid candado" src="assets/img/candado.png" alt="..." />
+            </div>
+        </section>
+        
+        
+        <!-- RETOS -->
+               
+        <div id="empezar" class="container mt-5 text-center" style="height: 500px;">
+            <h1>Tutorial</h1>
+            <p>Esta prueba no es más que un simple calentamiento para ponernos 
+                en escena. Así que sin más preambulos vamos a ello.</p>
+            <p>¿Qué escritora Inglesa nacio en el 1818 y murió en 1848?</p>
+           
+            <label class="mt-4" for="inpRespuesta">Tu respuesta:</label><br>
+            <input type="text" placeholder="Nombre Apellido" name="respuesta" id="inpRespuesta"><br>
+            <small id="span" style="opacity: 0; display: block;" class="text-danger mt-2 mb-3">.</small>
+
+            <button onclick="checkRespuesta(1)" class="btn btn-primary m-auto">Enviar</button>
+        </div> 
+                
+
+        <!-- CREADORES -->
+        <section id="creators" class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-2">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-person-fill text-primary mb-2" viewBox="0 0 16 16">
+                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                                </svg>
+                                <h4 class="text-uppercase m-0">HTML Y CSS</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Mario Ezquerro</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-person-fill text-primary mb-2" viewBox="0 0 16 16">
+                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                                </svg>
+                                <h4 class="text-uppercase m-0">Retos y testing</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">David Fernandez</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-person-fill text-primary mb-2" viewBox="0 0 16 16">
+                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                                </svg>
+                                <h4 class="text-uppercase m-0">BaseX y retos</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Rubén Gil</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-person-fill text-primary mb-2" viewBox="0 0 16 16">
+                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                                </svg>
+                                <h4 class="text-uppercase m-0">Edición de imagenes</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Ronaldo Jiménez</div>
+                            </div>
+                        </div>
+                    </div>                        
+                    
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container">
+                Copyright &copy; Someone is missing 2021
+            </div>
+        </footer>
+       
+        <script>
+
+        </script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
